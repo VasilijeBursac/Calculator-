@@ -5,7 +5,7 @@ using namespace std;
 int main()
 {
 
-    int a,b, result;
+    double a,b, result;
     char operation;
     int exit;
 
