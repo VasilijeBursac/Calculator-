@@ -6,24 +6,22 @@ int main()
 {
     double a, b, result;
     char operation;
-    bool exit = false;
+    bool IsRunning = false;
 
     cout<<"**Welcome to Calculator!**"<<endl<<endl;
     cout<<"Your choice: "<<endl;
     cout<<"1-Use calculator"<<endl;
     cout<<"0-Exit calculator"<<endl;
-    cin>>exit;
+    cin>>IsRunning;
 
-    while(exit != 0)
+    while(IsRunning != 0)
     {
-
         cout<<"Enter your first number: "<<endl;
         cin>>a;
         cout<<"Enter your second number: "<<endl;
         cin>>b;
         cout<<"Enter your operation(+,-,*,/):"<<endl;
         cin>>operation;
-
 
         switch(operation)
         {
@@ -49,9 +47,10 @@ int main()
         cout<<"Continue using calculator?: "<<endl;
         cout<<"1-Use calculator"<<endl;
         cout<<"0-Exit calculator"<<endl;
-        cin>>exit;
+        cin>>IsRunning;
     }
 
     cout<<"**End of the program!**"<<endl;
+    
     return 0;
 }
