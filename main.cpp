@@ -4,10 +4,9 @@ using namespace std;
 
 int main()
 {
-
-    double a,b, result;
+    double a, b, result;
     char operation;
-    int exit;
+    bool exit = false;
 
     cout<<"**Welcome to Calculator!**"<<endl<<endl;
     cout<<"Your choice: "<<endl;
@@ -15,7 +14,7 @@ int main()
     cout<<"0-Exit calculator"<<endl;
     cin>>exit;
 
-    while(exit!=0)
+    while(exit != 0)
     {
 
         cout<<"Enter your first number: "<<endl;
@@ -29,16 +28,16 @@ int main()
         switch(operation)
         {
             case '+':
-                result=a+b;
+                result = a + b;
                 break;
             case '-':
-                result=a-b;
+                result = a - b;
                 break;
             case '*':
-                result=a*b;
+                result = a * b;
                 break;
             case '/':
-                result=a/b;
+                result = a / b;
                 break;
             default:
                 cout<<"Unknown operation!"<<endl;
